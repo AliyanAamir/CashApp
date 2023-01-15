@@ -1,0 +1,122 @@
+.div-transactioncomp{
+    width: 1400px;
+    height: 68px;
+    position: relative;
+    margin-bottom: 14px;
+   
+}
+
+div.div-transactioncomp1{
+    position: relative;
+    width: 1400px;
+    height: 68px;
+    margin-bottom: 14px;
+}
+
+
+.rectangle5{
+    position: absolute;
+    width: 50px;
+    height: 71px;
+    left: 0px;
+    top: 0px;
+    background: #292929;
+    border-radius: 8px;
+}
+
+#vectorDebit{
+    position: absolute;
+    left: 14px;
+    top: 23.99px;
+    
+}
+
+#transaction_type{
+    position: absolute;
+    width: 37px;
+    height: 21px;
+    left: 60px;
+    top: -14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #FFFFFF;
+    
+}
+
+#transaction_receiver{
+    position: absolute;
+    width: 155px;
+    height: 24px;
+    left: 61px;
+    top: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#transaction_time{
+    position: absolute;
+    width: 43px;
+    height: 15px;
+    left: 61px;
+    top: 28px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #4E4E4E;
+}
+
+#transaction_date{
+    position: absolute;
+    width: 58px;
+    height: 15px;
+    left: 61px;
+    top: 44px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #4E4E4E;
+}
+
+#transaction_amount {
+    position: absolute;
+    width: 49px;
+    height: 39px;
+    /* left: 890px; */
+    right: 30px;
+    top: -21px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    color: #FFFFFF;
+      
+}
+
+#details_a{
+    position: absolute;
+    width: 49px;
+    height: 21px;
+    /* left: 945px; */
+    right: 20px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #4E4E4E;
+    
+}

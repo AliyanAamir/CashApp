@@ -1,0 +1,37 @@
+.TransactionList {
+    position: relative;
+    width: 1450px;
+    height: 485px;
+    left: 112px;
+    top: 381px;
+
+
+}
+
+.headings{
+    position: relative;
+    width: 1400px;
+    height: 60px;
+    top: 381px;
+    left: 112px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+}
+#p1{
+    position: relative;
+    left: 3px;
+}
+
+#p2{
+    position: relative;
+    left: 1319px;
+    top: -36px;
+}

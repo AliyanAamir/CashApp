@@ -1,0 +1,312 @@
+.DashboardBody{
+    position: relative;
+    width: 1600px;
+    height: 900px;
+    
+    background: #121212;
+}
+
+.sidebar{
+    position: absolute;
+    width: 88px;
+    height: 944px;
+    left: 0px;
+    top: -15px;
+    background: #292929;
+}
+
+#fiatbalancep1{
+    position: absolute;
+    width: 63px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+#cryptobalancep1{
+    position: absolute;
+    width: 98px;
+    height: 15px;
+    left: 35px;
+    top: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+.crypto-balance-div h3 {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 75px;
+    color: #FFFFFF;
+ }
+
+#rectangle53{
+    position: absolute;
+    left: 337px;
+    top: 18px;
+    
+}
+
+#crypto_details_link{
+    text-decoration: none;
+    position: absolute;
+    width: 64px;
+    height: 15px;
+    left: 351px;
+    top: 153px;
+    cursor: pointer;
+    
+}
+
+#cryptobalancep2{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #ADADAD;
+}
+
+#group4{
+    position: absolute;
+    left: 35px;
+    top: 155px;
+}
+.sidebar ul{
+    list-style: none;
+    top: 10px;
+}
+
+#Ellipse11{
+    position: absolute;
+    
+    left: 19px;
+    top: 175px;
+    
+}
+
+#group378 {
+   position: absolute;
+   top: 188px;
+   left: 31px;
+}
+
+#group377{
+    position: absolute;
+    left: 34%;
+    right: 0%;
+    top: 32.73%;
+    
+}
+
+#vectorD1 {
+    position: absolute;
+    left: 31px;
+    top: 396.661987px;
+}
+
+#group40{
+    left: 31px;
+    top: 494.661865px;
+    position: absolute;
+}
+    
+#group375{
+    position: absolute;
+    left: 28px;
+    top: 590.661865px;
+}
+
+.top-leftdiv{
+    position: absolute;
+    width: 166px;
+    height: 58px;
+    left: 112px;
+    top: 41px;
+}
+
+#greeting-msg {
+    position: relative;
+    width: 89px;
+    height: 18px;
+    left: 77px;
+    top: -5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4E4E4E;
+    bottom: 35px;
+}
+
+.top-leftdiv #cashtag{
+    position: relative;
+    width: 76px;
+    height: 24px;
+    left: 84px;
+    top: -18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+}
+
+.fiat-balance-div{
+    position: absolute;
+    width: 448px;
+    height: 196px;
+    left: 112px;
+    top: 140px;
+    
+    background: #292929;
+    border-radius: 8px;
+}
+.fiat-balance-div .ellipse1{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    left: 356px;
+    top: 20px;
+    background: #ADADAD;
+    z-index: 1;
+}
+.fiat-balance-div .ellipse2 {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    left: 381px;
+    top: 20px;
+    z-index: 2;
+    
+    background: #5B5B5B;
+}
+.fiat-balance-div  p {
+    position: absolute;
+    width: 63px;
+    height: 15px;
+    /* left: 20px; */
+    /* top: 20px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.fiat-balance-div  h3{
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+#group368{
+    position: absolute;
+    left: 20px;
+    top: 155px;
+}
+
+.fiat-balance-div a{
+    position: absolute;
+    width: 64px;
+    height: 15px;
+    left: 351px;
+    top: 153px;
+}
+.crypto-balance-div{
+    position: absolute;
+    width: 448px;
+    height: 196px;
+    left: 576px;
+    top: 140px;
+    
+    background: #292929;
+    border-radius: 8px;
+}
+
+#load_btn{
+    position: absolute;
+    width: 448px;
+    height: 93px;
+    left: 1040px;
+    top: 140px;
+    
+    background: #25A405;
+    border-radius: 8px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+#send_btn{
+    position: absolute;
+    width: 448px;
+    height: 93px;
+    left: 1040px;
+    top: 249px;
+    
+    background: #EA6262;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+#group1{
+    position: absolute;
+    left: 40px;
+    top: 14px;
+}
+
+.DashboardBody hr{
+    position: absolute;
+    width: 1400px;
+    height: 3px;
+    left: 95px;
+    top: 357px;
+    background: #1F1F1F;
+    border: none;
+}

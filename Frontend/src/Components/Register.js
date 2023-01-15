@@ -31,7 +31,7 @@ export const Register = () => {
     if (res.data) {
       console.log(typeof (res.data))
       console.log(res.data)
-      navigate('/')
+      navigate('/dashboard')
     }
   
   };
