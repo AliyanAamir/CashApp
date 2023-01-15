@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: GRIFTER;
+    src: url("./fonts/grifterbold.otf") format("opentype");
+}
+
+div.footer_container{
+    position: absolute;
+    width: 1903px;
+    height: 458px;
+    bottom: -230rem;
+    
+
+}
+
+
+.allrights {
+    position: relative;
+    width: 1903px;
+    height: 41px;
+    left: 0px;
+    top: 417px;
+    background: #FFFFFF;
+}
+
+.allrights p{
+    position: relative;
+    width: 160px;
+    height: 27px;
+    left: 900px;
+    top: 6px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+
+}
+
+#vectorfooter1{
+    position: absolute;
+    left: 12.53%;
+    right: 84.81%;
+    top: 61.09%;
+    bottom: 3.16%;
+    
+    
+}
+
+#vectorfooter2{
+    position: absolute;
+    left: 17.44%;
+    right: 78.56%;
+    top: 60.87%;
+    bottom: 2.92%;
+    
+    
+}
+
+#vectorfooter3{
+    position: absolute;
+    left: 21.62%;
+    right: 68.4%;
+    top: 60.87%;
+    bottom: 2.92%;
+}
+    
+#line2 {
+    position: absolute;
+    left: 310px;
+    top: 14px;
+}
+
+div.group344-text h2 {
+    position: absolute;
+    width: 534px;
+    height: 81px;
+    left: 190px;
+    top: 10px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 81px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+
+}
+
+div.group344-text p{
+    position: absolute;
+    width: 569px;
+    height: 54px;
+    left: 190px;
+    top: 126px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    
+   
+}
+
+div.group333 {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 50px;
+    left: 1144px;
+}
+
+.group333 h3{
+    position: relative;
+    top: 5px;
+    left: 26px;
+    width: 291px;
+    height: 45px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+
+
+}
+
+.group333 p{
+    position: relative;
+    left: 26px;
+    width: 298px;
+    height: 18px;
+    
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.group333 input{
+    position: relative;
+    width: 412px;
+    height: 60px;
+    left: 22px;
+    top: 38px;
+    
+    background: #252525;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #656565;
+    border: none;
+    text-indent: 25px;
+}
+
+.group333 button{
+    box-sizing: border-box;
+    position: absolute;
+    width: 412px;
+    height: 60px;
+    left: 20px;
+    top: 262px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    
+    color: #FFFFFF;
+    
+}

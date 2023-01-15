@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: #121212;
+    position: absolute;
+    width: 1600px;
+    height: 4959px;
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: GRIFTER;
+    src: url("./fonts/grifterbold.otf") format("opentype");
+}
+#logo {
+    position: absolute;
+width: 145px;
+height: 31px;
+left: 190px;
+top: 67px;
+
+font-family: 'GRIFTER';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 31px;
+
+color: #FFFFFF;
+    text-decoration: none;
+
+   
+}
+
+
+
+
+div.LHeading1  h4 {
+    position: absolute;
+    width: 505px;
+    height: 134px;
+    left: 190px;
+    top: 329px;
+    
+    font-family: 'GRIFTER';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 67px;
+    
+    color: #FFFFFF;
+    
+
+}
+
+div.LHeading1  p{
+    position: absolute;
+width: 403px;
+height: 24px;
+left: 197px;
+top: 543px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+/* #bgshapesdiv {
+    position: absolute;
+    left: 20px;} */
+
+#rectangle1{
+    position: absolute;
+    left: 73.88%;
+    right: 23.17%;
+    top: 3.1%;
+    bottom: 95.98%;
+    filter: blur(2px);
+    height: 45.41564047162004px;
+    width: 47.1966500942001px;
+    left: 1182.02197265625px;
+    top: 153.77001953125px;
+    border-radius: 0px;}
+
+#rectangle2{
+    position: absolute;
+    left: 296.06%;
+    right: -5.94%;
+    top: 19.66%;
+    bottom: 93.91%;
+    z-index: -1;
+    
+}
+#rectangle2-1{
+    position: absolute;
+    left: 30.69%;
+    right: 85.94%;
+    top: 332.06%;
+    bottom: 64.57%;
+}
+
+#rectangle3{
+    
+    position: absolute;
+    left: 169.38%;
+    right: 33.38%;
+    top: 82.69%;
+    bottom: 88.71%;
+
+
+}
+
+#rectangle3-1 {
+    position: absolute;
+    left: 26.31%;
+    right: 75.81%;
+    top: 175.59%;
+    bottom: 77.58%;
+    filter: blur(2px);
+    
+}
+
+#rectangle3-2 {
+    height: 114px;
+    width: 117px;
+    left: 1090px;
+    top: 614px;
+    border-radius: 0px;
+    position: absolute;
+    left: 126.12%;
+    right: 24.56%;
+    top: 308.38%;
+    bottom: 85.32%;
+    filter: blur(2.5px);
+
+    
+}
+
+#rectangle41 {
+    position: absolute;
+    left: 190px;
+    top: 972px;
+    
+}
+
+#illustration1{
+
+    position: absolute;
+    left: 129px;
+    top: 1138px;
+}
+
+#rectangle4{
+    height: 114px;
+    width: 117px;
+    left: 1090px;
+    top: 614px;
+    border-radius: 0px;
+    position: absolute;
+    left: 236.12%;
+    right: 24.56%;
+    top: 118.38%;
+    bottom: 85.32%;
+    filter: blur(2.5px);
+}
+
+#rectangle5{
+    position: absolute;
+    left: 272.97%;
+    right: -30.92%;
+    top: 159.45%;
+    bottom: 82.64%;
+}
+
+#socialvectors {
+    position: absolute;
+    width: 227.97px;
+    height: 22px;
+    left: 190px;
+    top: 803px;
+}
+
+#vector1 {
+    position: absolute;
+    left: 309.18%;
+    right: 8.51%;
+    top: 135.33%;
+    bottom: 85.81%;
+}
+
+#group100 {
+    position: absolute;
+    left: 185.26%;
+    right: 43.29%;
+    top: 133.53%;
+    bottom: 85.56%;
+}
+
+#group349{
+    height: 96.5027067834851px;
+    width: 86.72401279800827px;
+    left: 907px;
+    top: 203.3232421875px;
+    border-radius: 0px;
+    position: absolute;
+    width: 86.72px;
+    height: 96.5px;
+    left: 907px;
+    top: 203.32px;
+}
+
+#ellipse3{
+    position: absolute;
+    width: 529px;
+    height: 525px;
+    left: 1026px;
+    top: 216px;
+}
+
+
+#ellipse4{
+    
+
+    position: absolute;
+    width: 567px;
+    height: 567px;
+    left: 1006px;
+    top: 194px;
+    
+}
+
+#ellipse5 {
+    
+
+    position: absolute;
+    width: 606px;
+    height: 602px;
+    left: 985px;
+    top: 177px;
+    
+}
+
+#iphoneimg1 {
+    position: absolute;
+    left: 1196.45px;
+    top: 133.01px;
+    z-index: 1;
+    
+}
+
+#iphoneimg2{
+    position: absolute;
+    left: 933.11px;
+    top: 299.98px;
+}
+
+div.section2-text {
+    position: absolute;
+    width: 592px;
+    height: 278px;
+    left: 1030px;
+    top: 1138px;
+
+}
+
+div.section2-text h4{
+    font-family: 'GRIFTER';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 67px;
+    
+    color: #FFFFFF;
+}
+
+div.section2-text p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 43px;
+    color: #FFFFFF;
+    top: 218px;
+    position: absolute;
+}
+
+
+div.section3-text{
+    position: absolute;
+    width: 483px;
+    height: 278px;
+    left: 239px;
+    top: 2058px;
+}
+
+div.section3-text h4 {
+    font-family: 'GRIFTER';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 67px;
+    
+    color: #FFFFFF;
+}
+
+div.section3-text p{
+   
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    position: absolute;
+    top: 236px;
+    color: #FFFFFF;
+}
+
+#rectangle41-1{
+    position: absolute;
+    left: 1180px;
+    top: 1871px;
+}
+
+#rectangle3-3{
+   
+    position: absolute;
+    left: 228.94%;
+    right: 31.12%;
+    top: 376.96%;
+    bottom: 56.54%;
+    filter: blur(2.5px);
+}
+
+#rectangle2-2{
+    position: absolute;
+    left: 332.31%;
+    right: 5.31%;
+    top: 362.19%;
+    bottom: 60.44%;
+    filter: blur(-0.5px);
+   
+}
+#rectangle3-4{
+    position: absolute;
+    left: 322%;
+    right: 7.44%;
+    top: 499.1%;
+    bottom: 44%;
+    filter: blur(4px);
+
+}
+
+#illustration-bank {
+    position: absolute;
+    left: 1177px;
+    top: 1995px;
+}
+
+div.section4-img {
+    background-image: url("./svg/rectangle46.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1920px;
+    height: 950px;
+    
+    top: 2752px;
+    
+
+}
+
+div.section4-img > .section4-text{
+    
+    position: absolute;
+    width: 949px;
+    height: 211px;
+    left: 503px;
+    top: 426px;
+}
+
+div.section4-img h3{
+    position: relative;
+    width: 949px;
+    height: 67px;
+    left: 1px;
+    top: -68px;
+    font-family: 'GRIFTER';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 67px;
+    text-align: center;
+    
+    
+    color: #FFFFFF;
+}
+
+div.section4-img p{
+    position: absolute;
+    width: 592px;
+    height: 24px;
+    left: 186px;
+    top: 74px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+/* @media only screen and (min-width: 1024px) {
+    div.section4-img {
+        width: 1024px;
+        height: 847px;
+        background-size: cover;
+    }
+
+} */
+
+#rectangle46{
+    position: absolute;
+    width: 1600px;
+    height: 716px;
+    left: 0px;
+    top: 3491px;
+}
+
+
+    
+
