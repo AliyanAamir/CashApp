@@ -74,4 +74,15 @@ class User(AbstractBaseUser):
         # Simplest possible answer: All admins are staff
         return self.is_admin
 
+choices=(('debit','Debit'),('credit','Credit'),('none','None'))
+class Transaction_Details(models.Model):
+    
+    sender = models.ForeignKey(User,on_delete=models.CASCADE, related_name="sender")
+    reciever = models.ForeignKey(User,on_delete=models.CASCADE,related_name="reciever")
+    amount= models.FloatField(default=0)
+    date=models.DateField(auto_now_add=True)
+    status_for_sender=models.CharField(choices=choices, max_length=6,default='none')
+    status_for_reciever=models.CharField(choices=choices, max_length=6,default='none')
+    isDebit = models.BooleanField(default=False)
+
 

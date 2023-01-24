@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from account.models import User
+from account.models import *
 
 
 
@@ -52,6 +52,30 @@ class UserChangePasswordSerializer(serializers.Serializer):
     user.set_password(password)
     user.save()
     return attrs
+
+class TransactionViewSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Transaction_Details
+    fields =  ['date','sender','reciever','amount']
+  
+  # 
+    
+      
+# def to_representation(self, attrs):
+  #   user= attrs
+  #   # {date:'13 Nov 2022',sender:'Leena Kamran',amount:'100',isDebit:true}
+  #   sender=Transaction_Details.objects.filter(sender=user)
+  #   reciever = Transaction_Details.objects.filter(reciever=user)
+
+  #   all_data={'data':[]}
+  #   for x in sender:
+      
+  #     all_data['data'].append({'date':x.transaction_time,'sender':x.sender,'amount':x.amount,'isDebit':True})
+  #   for y in reciever:
+  #     all_data['data'].append({'date':y.transaction_time,'sender':y.sender,'amount':y.amount,'isDebit':False})
+  #   return all_data
+
+      
 
 
 

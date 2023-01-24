@@ -1,6 +1,6 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin 
-from account.models import User
+from django.contrib.auth.admin import UserAdmin
+from account.models import *
 # Register your models here.
 
 class UserAdmin(UserAdmin):
@@ -30,3 +30,8 @@ class UserAdmin(UserAdmin):
 
 # Now register the new UserAdmin...
 admin.site.register(User, UserAdmin)
+
+
+class Trasaction_admin(admin.ModelAdmin):
+    list_display = ("id","sender","reciever","amount","status_for_sender","status_for_reciever","date")
+admin.site.register(Transaction_Details,Trasaction_admin)   

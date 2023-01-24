@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import './css/Login.css';
-import { useNavigate , useDispatch } from "react-router-dom";
-import { Typography, Alert , Box, Button, CircularProgress} from '@mui/material';
+import { useNavigate  } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Typography, Alert , Box, CircularProgress} from '@mui/material';
 import { useLoginUserMutation } from "../services/UserAuthApi";
-
+import { getToken, storeToken } from '../services/LocalStorageServices';
+import { setUserToken } from '../features/authSlice';
 
 export const Login = () => {
 
@@ -12,7 +14,7 @@ export const Login = () => {
   const [server_error, setServerError] = useState({})
   const navigate = useNavigate();
   const [loginUser, { isLoading }] = useLoginUserMutation()
-//   const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
@@ -22,16 +24,24 @@ export const Login = () => {
     }
     const res = await loginUser(actualData)
     if (res.error) {
-      console.log(typeof (res.error.data.errors))
-      console.log(res.error.data.errors)
+      // console.log(typeof (res.error.data.errors))
+      // console.log(res.error.data.errors)
       setServerError(res.error.data.errors)
     }
     if (res.data) {
-      console.log(typeof (res.data))
-      console.log(res.data)
+      // console.log(typeof (res.data))
+      // console.log(res.data.token)
+      storeToken(res.data.token)
+      let { access_token } = getToken()
+      dispatch(setUserToken({ access_token: access_token }))
       navigate('/dashboard')
-    }}
-    
+    }
+  }
+
+let { access_token } = getToken()
+useEffect(() => {
+  dispatch(setUserToken({ access_token: access_token }))
+}, [access_token, dispatch]) 
 
   return (
     <div className="auth-form-container">
