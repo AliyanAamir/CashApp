@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Transaction from './Transaction';
 import './css/TransactionList.css';
+import { useGetTransactionDetailsQuery } from '../services/UserAuthApi';
+import { getToken, removeToken } from '../services/LocalStorageServices';
+
+import { useSelector } from 'react-redux';
+
+
 
 
 function TransactionList() {
     
-    const transactions = [
-        {date:'13 Nov 2022',sender:'Leena Kamran',amount:'100',isDebit:true},
-        {date:'15 Nov 2022',receiver:'Sadia Kamran',amount:'50',isDebit:false},
-        {date:'17 Nov 2022',receiver:'Rohan Kamran',amount:'600',isDebit:false},
-      ]
+    const {access_token} = useSelector(state => state.auth)
+    const data = useGetTransactionDetailsQuery(access_token);
+    const [Enter,setEnter] = useState('')
+    
+    const Entries = async()=> {const entries= await data.data.data;
+        setEnter(entries)
+       
+    };
+    
+   
+    {Entries()}
+    
 
+
+   
     return(
 
         <>
@@ -19,8 +34,12 @@ function TransactionList() {
                 <p id='p2'>Amount</p>
             </div>
             <div className='TransactionList'>
-        {
-            transactions.map((transactions) => <Transaction date={transactions.date} sender={transactions.sender} receiver={transactions.receiver} amount={transactions.amount} isDebit={transactions.isDebit}/>)
+                
+        {   
+            
+            Enter &&Enter.map((data) => <Transaction date={data.date} sender={data.reciever} reciever={data.sender} amount={data.amount} isDebit={data.isDebit}/>)
+            
+           
         }
         </div>
     
@@ -28,5 +47,7 @@ function TransactionList() {
     );    
 
 }
+// 
+          
 
 export default TransactionList;

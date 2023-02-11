@@ -1,0 +1,65 @@
+.NavBar2 {
+    position: absolute;
+    width: 1376px;
+    height: 58px;
+    left: 112px;
+    top: 41px;
+    /* background-color: red; */
+}
+
+#navUL {
+    list-style: none;
+    display: list-item;
+    position: relative;
+    top: -75px;
+    left: 805px;
+}
+
+.NavBar2 .profile_icon {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    /* left: 0px; */
+    /* top: 0px; */
+    background: #4E4E4E;
+    border-radius: 50%;
+}
+
+#profile_vector {
+    position: relative;
+    top: 12px;
+    left: 15px;
+}
+
+#greetingmsg{
+    position: relative;
+    width: 89px;
+    height: 18px;
+    left: 70px;
+    top: 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4E4E4E;
+}
+
+#profile-name{
+    position: relative;
+    width: 76px;
+    height: 24px;
+    left: 70px;
+    top: -18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+ul > li{
+    display: inline-block;
+    margin-inline-start: 100px;
+}

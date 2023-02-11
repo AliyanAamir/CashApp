@@ -1,0 +1,157 @@
+.select-network {
+    position: relative;
+    top: 90px;
+    left: 0px;
+}
+
+#network-list {
+    box-sizing: border-box;
+    position: absolute;
+    width: 332px;
+    height: 52px;
+    left: 94px;
+    top: 330px;
+}
+#sf-div2-fiatbtn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+    gap: 10px;
+    position: relative;
+    width: 201px;
+    height: 67px;
+    left: 117px;
+    top: 290px;
+    background: #24A405;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
+    flex: none;
+    order: 0;}
+
+.div-wallet {
+    box-sizing: border-box;
+    position: absolute;
+    width: 680px;
+    height: 179px;
+    left: 117px;
+    top: 540px;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+}
+
+.loadf-h1{
+    position: absolute;
+    width: 136px;
+    height: 24px;
+    left: 126px;
+    top: 482px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.wallet-address{
+    position: relative;
+    top: 15px;
+    left: 28px;
+}
+
+.Cashtag-h-p{
+    position: relative;
+    top: 10px;
+    left: 28px;
+    width: 382px;
+    height: 36px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+}
+
+.cashtag-value{
+    width: 52px;
+    height: 24px;
+
+    position: relative;
+    left: 27px;
+    top: -4px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+
+}
+
+.IBAN-val{
+    width: 171px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    position: relative;
+    left: 30px;
+    top: 24px;
+}
+
+.IBAN{
+    position: absolute;
+    width: 38px;
+    height: 24px;
+    left: 30px;
+    top: 85px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.div-wallet .QR-code{
+    box-sizing: border-box;
+    position: relative;
+    width: 216px;
+    height: 179px;
+    left: 463px;
+    top: -148px;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+}
+
+#qrcode{
+    position: relative;
+    top: 16px;
+    left: 34px;
+}

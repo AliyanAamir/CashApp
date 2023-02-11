@@ -9,7 +9,7 @@
 .sidebar{
     position: absolute;
     width: 88px;
-    height: 944px;
+    height: 2000px;
     left: 0px;
     top: -15px;
     background: #292929;
@@ -159,7 +159,7 @@
     bottom: 35px;
 }
 
-.top-leftdiv #cashtag{
+.top-leftdiv #account-name-ip{
     position: relative;
     width: 76px;
     height: 24px;
@@ -275,6 +275,15 @@
     color: #FFFFFF;
 }
 
+#load_btn:hover{
+    border: 1px solid;
+}
+#load_btn:focus:active{
+    background: #219405;
+}
+
+
+
 #send_btn{
     position: absolute;
     width: 448px;
@@ -293,6 +302,13 @@
     
     
     color: #FFFFFF;
+}
+
+#send_btn:hover{
+    border: 1px solid;
+}
+#send_btn:focus:active{
+    background: #bb4e4e;
 }
 
 #group1{

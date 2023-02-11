@@ -6,6 +6,7 @@ import { Typography, Alert , Box, CircularProgress} from '@mui/material';
 import { useLoginUserMutation } from "../services/UserAuthApi";
 import { getToken, storeToken } from '../services/LocalStorageServices';
 import { setUserToken } from '../features/authSlice';
+import Header from '../Components/Header';
 
 export const Login = () => {
 
@@ -30,20 +31,21 @@ export const Login = () => {
     }
     if (res.data) {
       // console.log(typeof (res.data))
-      // console.log(res.data.token)
+      // console.log(res.data)
       storeToken(res.data.token)
       let { access_token } = getToken()
       dispatch(setUserToken({ access_token: access_token }))
       navigate('/dashboard')
     }
   }
-
-let { access_token } = getToken()
-useEffect(() => {
-  dispatch(setUserToken({ access_token: access_token }))
-}, [access_token, dispatch]) 
+  let { access_token } = getToken()
+  useEffect(() => {
+    dispatch(setUserToken({ access_token: access_token }))
+  }, [access_token, dispatch])
 
   return (
+    <>
+        <Header />
     <div className="auth-form-container">
             <h2>Login</h2>
             <form className="login-form" onSubmit={handleSubmit}>
@@ -56,9 +58,10 @@ useEffect(() => {
                 </Box>
                 
                 
-                <a href="#">Forgot Email / Password</a>
+                
                 {server_error.non_field_errors ? <Alert severity='error' style={{marginLeft:'30px',width:'270px',marginTop:'10px'}}>{server_error.non_field_errors[0]}</Alert> : ''}
             </form>
         </div>
+    </>
   )
 }

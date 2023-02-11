@@ -33,5 +33,5 @@ admin.site.register(User, UserAdmin)
 
 
 class Trasaction_admin(admin.ModelAdmin):
-    list_display = ("id","sender","reciever","amount","status_for_sender","status_for_reciever","date")
+    list_display = ("id","sender","reciever","amount","status_for_sender","status_for_reciever","date","memo")
 admin.site.register(Transaction_Details,Trasaction_admin)   

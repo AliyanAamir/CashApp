@@ -84,5 +84,6 @@ class Transaction_Details(models.Model):
     status_for_sender=models.CharField(choices=choices, max_length=6,default='none')
     status_for_reciever=models.CharField(choices=choices, max_length=6,default='none')
     isDebit = models.BooleanField(default=False)
+    memo  = models.CharField(max_length=200,default='none')
 
 

@@ -3,6 +3,8 @@ import "./css/Register.css";
 import { useRegisterUserMutation } from "../services/UserAuthApi";
 import { Typography, Alert } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { storeToken } from "../services/LocalStorageServices";
+import Header from './Header'
 
 export const Register = () => {
   const [server_error, setServerError] = useState({});
@@ -29,15 +31,16 @@ export const Register = () => {
       setServerError(res.error.data.errors)
     }
     if (res.data) {
-      console.log(typeof (res.data))
-      console.log(res.data)
+      
+      storeToken(res.data.token)
       navigate('/dashboard')
     }
   
   };
 
   return (
-   
+    <>
+  <Header />
     <div className="RegisterPage">
       <h2>Register</h2>
       <form className="RegForm"  onSubmit={handleSubmit}>
@@ -70,5 +73,6 @@ export const Register = () => {
       {server_error.non_field_errors ? <Alert severity='error' style={{position:'relative',marginTop:'600px'}}>{server_error.non_field_errors[0]}</Alert> : ''}
      
     </div>
+    </>
   );
 };

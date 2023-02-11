@@ -1,5 +1,7 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { useSelector } from 'react-redux';
+import { getToken } from "../services/LocalStorageServices";
 // Define a service using a base URL and expected endpoints
 export const UserAuthApi = createApi({
   reducerPath: 'UserAuthApi',
@@ -29,27 +31,38 @@ export const UserAuthApi = createApi({
         }
       }
     }),
-    Transaction: builder.mutation({
-      query: (user) => {
+
+    getTransactionDetails: builder.query({
+      query: (access_token) => {
         return {
-          url: 'payment/',
-          method: 'POST',
-          body: user,
+          url: 'transaction_view/',
+          method: 'GET',
           headers: {
-            'Content-type': 'application/json',
-            "Authorization": `Bearer ${window.localStorage.getItem('token')}`,
+            'authorization': `Bearer ${access_token}`,
           }
         }
       }
     }),
-    TransactionView: builder.query({
+    getUserInfoShow: builder.query({
       query: (access_token) => {
         return {
-          url: 'viewbalance/',
+          url: 'get_user_info/',
           method: 'GET',
           headers: {
-            "Authorization": `Bearer ${access_token}`,
-
+            'authorization': `Bearer ${access_token}`,
+          }
+        }
+      }
+    }),
+    Transaction: builder.mutation({
+      query: (data) => {
+        return {
+          url: 'payment/',
+          method: 'POST',
+          body: data,
+          headers: {
+            'Content-type': 'application/json',
+            'authorization': `Bearer ${getToken().access_token}`,
           }
         }
       }
@@ -59,4 +72,4 @@ export const UserAuthApi = createApi({
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useRegisterUserMutation , useLoginUserMutation,useTransactionMutation,useTransactionViewQuery} = UserAuthApi
+export const { useRegisterUserMutation , useLoginUserMutation,useTransactionMutation,useGetTransactionDetailsQuery,useGetUserInfoShowQuery} = UserAuthApi

@@ -1,0 +1,398 @@
+.sf-div1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 52px;
+
+    position: absolute;
+    width: 1488px;
+    height: 60px;
+    left: 112px;
+    top: 155px;
+
+}
+
+.sf-div1 > p{
+    width: 236px;
+    height: 60px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.sf-div1 hr{
+    width: 1200px;
+    height: 3px;
+    border: none;
+
+
+    background: #1F1F1F;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
+
+.sf-div2 {
+    position: relative;
+    width: 370px;
+    height: 45px;
+    left: 112px;
+    top: 262px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+
+
+#sf-div2-cryptobtn{
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 70px;
+    gap: 10px;
+    
+    position: relative;
+    width: 201px;
+    height: 67px;
+    left: 112px;
+    top: 280px;
+    background: none;
+    
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #4D4D4D;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#sf-div2-cryptobtn:focus{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 70px;
+    gap: 10px;
+    
+    position: relative;
+    width: 201px;
+    height: 67px;
+    left: 112px;
+    top: 280px;
+    
+    background: #24A405;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#sf-div2-cryptobtn:active{
+    background: #24A405;
+    color: #FFFFFF;
+}
+
+#sf-div2-fiatbtn{
+    box-sizing: border-box;
+   
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+    gap: 10px;
+    
+    position: relative;
+    width: 201px;
+    height: 67px;
+    left: 117px;
+    top: 290px;
+    background: #24A405;
+    
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: white;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+#sf-div2-fiatbtn:focus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 70px;
+    gap: 10px;
+    
+    position: relative;
+    width: 201px;
+    height: 67px;
+    left: 117px;
+    top: 290px;
+    
+    background: #24A405;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hr-2 {
+
+    position: absolute;
+    width: 1376px;
+    height: 3px;
+    left: 112px;
+    top: 458px;
+    
+    background: #1F1F1F;
+    border: none;
+}
+
+#wallet-address{
+    box-sizing: border-box;
+    position: absolute;
+    width: 448px;
+    height: 52px;
+    left: 893px;
+    top: 531px;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    background: none;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 16px;
+
+
+}
+
+
+#wallet-address::placeholder{
+    position: relative;
+    width: 66px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #4D4D4D;
+}
+
+.selection-headings{
+    position: absolute;
+    top: 472px;
+    left: 122px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+.select-coin{
+    position: relative;
+    top: 0px;
+}
+
+.select-network-sf{
+    position: relative;
+    top: -40px;
+    left: 395px;
+}
+
+.wallet-address-sf{
+    position: relative;
+    top: -77px;
+    left: 789px;
+}
+
+.div-bottom input{
+    box-sizing: border-box;
+    position: absolute;
+    width: 332px;
+    height: 52px;
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    background: none;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+
+
+.div-bottom p{
+    position: absolute;
+    top: 600px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.memo-heading{
+    left: 522px;
+}
+
+.amount-heading{
+    left: 122px;
+}
+
+.amount-input{
+    left: 112px;
+    top: 654px;
+}
+
+.memo-input{
+    left: 512px;
+    top: 654px;
+}
+
+#account-name{
+    box-sizing: border-box;
+    background: none;
+    position: absolute;
+    width: 332px;
+    height: 52px;
+    left: 513px;
+    top: 530px;
+    
+    border: 1px solid #4D4D4D;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.send-btn{
+    position: absolute;
+    width: 448px;
+    height: 93px;
+    left: 112px;
+    top: 784px;
+    
+    background: #EA6262;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+}
+
+.send-btn:hover{
+    border: 1px solid;
+}
+
+.send-btn:focus:active{
+    background: #bb4e4e;
+}

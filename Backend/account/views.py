@@ -60,13 +60,14 @@ class UserChangePasswordView(APIView):
 
 class Payment(APIView):
 
-  renderer_classes = [UserRenderer]
+  # enderer_classes = [UserRenderer]
   permission_classes = [IsAuthenticated]
 
   def post(self, request, format=None):
 
     cashtag = request.data.get("cashtag")
     balance = request.data.get("balance")
+    memo = request.data.get("memo")
 
       # Validation
     if not balance:
@@ -79,31 +80,34 @@ class Payment(APIView):
     payment_sender.balance = float(payment_sender.balance) - float(balance)
     payment_sender.save()
 
-    payment_reciever = User.objects.filter(cashtag=cashtag)[0]
+    payment_reciever = User.objects.filter(cashtag=cashtag)
     if not payment_reciever:
         return Response({'errors':{'msg': 'User with this cashtag does not exist'}}, status=status.HTTP_403_FORBIDDEN)
-
-    payment_reciever.balance = float(payment_reciever.balance) + float(balance)
-    payment_reciever.save()
     
-    Transaction_Details.objects.create(sender=payment_sender,reciever=payment_reciever,amount=balance,status_for_sender='credit',status_for_reciever='debit')
+    payment_reciever[0].balance = float(payment_reciever[0].balance) + float(balance)
+    payment_reciever[0].save()
+    
+    Transaction_Details.objects.create(sender=payment_sender,reciever=payment_reciever[0],amount=balance,status_for_sender='credit',status_for_reciever='debit',memo = memo)
 
-    return Response({'msg': f'{payment_sender} sent {payment_reciever} ${balance}'}, status=status.HTTP_200_OK)
+    return Response({'msg': f'{payment_sender} sent {payment_reciever[0]} ${balance}'}, status=status.HTTP_200_OK)
 
   # def get(self, request, format=None):
 
 class TransactionView(APIView):
-  enderer_classes = [UserRenderer]
+
   permission_classes = [IsAuthenticated]
   def get(self, request,format=None):
-    current_user = request.user
-    transaction_details = Transaction_Details.objects.filter(sender=current_user)
-    p = Transaction_Details.objects.filter(reciever = current_user)
-    r = p | transaction_details
-    print(transaction_details)
-
-    serializer = TransactionViewSerializer(r,many=True)
+   
+    serializer = TransactionViewSerializer(request.user)
     return Response(serializer.data, status=status.HTTP_200_OK)
     
     # receiever = Transaction_Details.objects.filter(sender=sender)
+
+class UserInfoView(APIView):
+
+  permission_classes = [IsAuthenticated]
+
+  def get(self, request,format=None):
+    serializer = UserInfoSerializer(request.user)
+    return Response(serializer.data, status=status.HTTP_200_OK)
 

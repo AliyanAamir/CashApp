@@ -13,7 +13,7 @@ export const authSlice = createSlice({
     },
     unsetUserToken: (state,action)=>{
         state.access_token = action.payload.access_token
-    }
+    },
   },
 })
 

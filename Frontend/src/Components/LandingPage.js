@@ -2,11 +2,15 @@ import React from "react";
 import './css/LandingPage.css';
 
 import {Footer} from './Footer';
+import Header from '../Components/Header';
 
 
 function LandingPage() {
     return (
+    <>
+        <Header />
         <body>
+            
             <div className="LHeading1">
                 <h4>Do more with your money</h4>
                 <p>Send and spend, bank* and buy stocks or bitcoin</p>
@@ -80,7 +84,7 @@ function LandingPage() {
                 <Footer/>
             
         </body>
-        
+        </>
     );
 
 }
